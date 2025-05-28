@@ -1,9 +1,9 @@
 .Background {
   background: #fff;
-  padding-bottom: 5%;
   padding-left: 5%;
-  padding-right: 5%;
   padding-top: 5%;
+  padding-right: 5%;
+ 
 }
 
 /* Flex container */
@@ -49,6 +49,19 @@
   margin-bottom: 0.5rem;
 }
 
+.btn{
+   background-color:  #00a1a7;
+   color: white;
+   font-weight: bold;
+}
+
+.btn:hover{
+  background-color:  #0c797c;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   
+
+}
 /* Responsive: Stack vertically on small screens */
 @media (max-width: 768px) {
   .flex {

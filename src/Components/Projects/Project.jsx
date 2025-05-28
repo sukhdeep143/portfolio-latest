@@ -13,7 +13,7 @@ const projects = [
       Used MongoDB to store and manage user data, driver availability, booking history, and live location data efficiently.
     `,
     link: "https://rapidoride.com/",
-    image: "/ride.png", // optional, add image if you have one
+    image: "/ride.png", 
   },
   {
     id: 2,
@@ -41,7 +41,8 @@ const projects = [
       Make use of mongodb aggregation pipelines to effectively fetch chats,gigs etc.
       Collaborated with swift,kotlin team for implementing APIs.
     `,
-    link: "", // no link available
+    link: "https://secretworld.ai/", 
+    image: "/secretWorld.png"
   },
   {
     id: 4,
@@ -62,7 +63,7 @@ function ProjectList() {
     <div className="Background">
       {projects.map((project) => (
         <div key={project.id} className="flex ">
-          {/* Optional: add image if available */}
+      
           {project.image && (
             <div className="image-container">
               <img src={project.image} alt={project.title} className="image" />
@@ -78,7 +79,7 @@ function ProjectList() {
 
             {project.link && (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <button type="button" className="btn btn-primary">
+                <button type="button" className="btn ">
                   Check Out
                 </button>
               </a>
