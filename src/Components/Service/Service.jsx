@@ -2,6 +2,8 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import { Fade } from "react-awesome-reveal";
+
 import "./Service.css";
 
 function Service() {
@@ -60,8 +62,8 @@ function Service() {
           <img src="/right_Arow.png" alt="" className="image1" />
         </button>
       </div>
-
       <div className="information">
+            <Fade cascade duration={250}>
         {card.map((cards) => (
           <Card
             className="info"
@@ -75,6 +77,7 @@ function Service() {
             </Card.Body>
           </Card>
         ))}
+        </Fade>
       </div>
       <div></div>
     </div>

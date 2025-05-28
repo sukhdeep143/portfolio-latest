@@ -1,5 +1,7 @@
 import React from "react";
 import "./project.css";
+import { Fade } from "react-awesome-reveal";
+
 
 const projects = [
   {
@@ -64,6 +66,8 @@ function ProjectList() {
       <div className="HeadTag">
         <h1>My Professional Work</h1>
       </div>
+      <Fade cascade duration={250}>
+
       {projects.map((project) => (
         <div key={project.id} className="flex ">
       
@@ -90,6 +94,8 @@ function ProjectList() {
           </div>
         </div>
       ))}
+      </Fade>
+
     </div>
   );
 }
